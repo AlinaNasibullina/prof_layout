@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,8FAAsF;AACtF,4BAAoB;AACpB,yBAAiB;AACjB,yBAAiB",
+"sources": ["_browseStyle.scss"],
+"names": [],
+"file": "_browseStyle.css"
+}

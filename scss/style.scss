@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url(../scss/_browseStyle.scss);
 
 $accentColor: #f16d7f;
 
@@ -963,10 +963,3 @@ body {
     font-weight: 300;
     color: #222222;
 }
-
-.Checkout option:focus {
-    outline: none;
-    background: #ffffff;
-    border: none;
-}
-
