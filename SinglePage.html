@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles/ShoppingCart.css">
+    <link rel="stylesheet" href="styles/singlePage.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -52,89 +52,75 @@
 			<h1>New Arrivals</h1>
 			<p>Home / Men / <span>New Arrivals</span></p>
 		</div>
+    </div>
+    <div class="headSlider">
+    	<button><i class="fas fa-angle-left"></i></button><button><i class="fas fa-angle-right"></i></button>
 	</div>
-	<main class="container cart-table">
-		<div class="cart-table__head">											  											  
-			<h3>Product Details</h3>
-			<h3>unite Price</h3>
-			<h3>Quantity</h3>
-			<h3>shipping</h3>
-			<h3>Subtotal</h3>
-			<h3>ACTION</h3>
-		</div>
-		<div class="product-details-row">
-			<div class="product-detail-column">
-				<img src="img/rectangle_26_2879.png" alt="product">
-				<div class="product-details">
-					<p class="product-name">Mango People T-shirt</p>
-					<p>Color:<span>Red</span><br>Size:<span>Xll</span></p>
+	<div class="headSlider--content container">
+		<div><a href="#"></a><a href="#"></a><a href="#"></a></div>
+		<div class="headSlider--page">
+			<h2 class="headerSlider--h">WOMEN COLLECTION</h2>
+			<h3>Moschino Cheap And Chic</h3>
+			<p class="headSlider--text" >Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+			<p class="headSlider--details">MATERIAL: <span>COTTON</span>        DESIGNER: <span>BINBURHAN</span></p>
+			<p class="headSlider--price">$561</p>
+			<div class="greyLine"></div>
+			<form class="headSlider--addToCart">
+				<div>
+					<label for="choose_color">CHOOSE COLOR</label>
+					<input type="text" list="choose_color" placeholder="Red">
+					<datalist id="choose_color">
+						<option value="Red"></option>
+						<option value="Black"></option>
+						<option value="White"></option>
+					</datalist>
 				</div>
-			</div>
-			<p>$150</p>
-			<input type="text" pattern="[0-9]{,3}">
-			<p>FREE</p>
-			<p>$300</p>
-			<button><i class="fas fa-times-circle"></i></button>
-		</div>
-		<div class="product-details-row">
-			<div class="product-detail-column">
-				<img src="img/rectangle_26_2905.png" alt="product">
-				<div class="product-details">
-					<p class="product-name">Mango People T-shirt</p>
-					<p>Color:<span>Red</span><br>Size:<span>Xll</span></p>
+				<div>
+					<label for="choose_size">CHOOSE SIZE</label>
+					<input type="text" list="choose_size" placeholder="S">
+					<datalist id="choose_size">
+						<option value="S"></option>
+						<option value="M"></option>
+						<option value="L"></option>
+						<option value="XL"></option>
+						<option value="XXL"></option>
+					</datalist>
 				</div>
-			</div>
-			<p>$150</p>
-			<input type="text" pattern="[0-9]{,3}">
-			<p>FREE</p>
-			<p>$300</p>
-			<button><i class="fas fa-times-circle"></i></button>
-		</div>
-		<div class="product-details-row">
-			<div class="product-detail-column">
-				<img src="img/rectangle_26_2920.png" alt="product">
-				<div class="product-details">
-					<p class="product-name">Mango People T-shirt</p>
-					<p>Color:<span>Red</span><br>Size:<span>Xll</span></p>
+				<div>
+					<label for="quantity">QUANTITY</label>
+					<input id="quantity" type="text" placeholder="2">
 				</div>
-			</div>
-			<p>$150</p>
-			<input type="text" pattern="[0-9]{,3}">
-			<p>FREE</p>
-			<p>$300</p>
-			<button><i class="fas fa-times-circle"></i></button>
-		</div>
-		<div class="cart-table-button">
-			<button class="clear_cart">cLEAR SHOPPING CART</button>
-			<button class="continue_shopping">cONTINUE sHOPPING</button>
-		</div> <!-- связать кнопки с таблицей-->
-		<form class="Checkout" action="">
-			<div class="shippingAdress">
-				<h3>Shipping Adress</h3>
-				<select name="country">
-					<option value="">Bangladesh</option>
-					<option value="">Russia</option>
-				</select>
-				<input type="text" placeholder="State">
-				<input type="text" placeholder="Postcode / Zip">
-				<button>get a quote</button>
-			</div>
-			<div class="couponDiscount">
-				<h3>coupon discount</h3>
-				<p>Enter your coupon code if you have one</p>
-				<input type="text" placeholder="State">
-				<button>Apply coupon</button>
-			</div>
-			<div class="proceedCheckout">
-				<p>Sub total      $900</p>
-				<p>GRAND TOTAL     <span>$900</span></p>
-				<hr>
-				<button>proceed to checkout</button>
-			</div>
-		</form>
-	</main>
-</div>
+				<button>Add to Cart</button>
+			</form>
 
+		</div>
+	</div>
+    <div class="additional container">
+    	<h3>you may like also</h3>
+    	<div class="additional--products">
+			<a href="#">
+				<img src="img/layer_44_2781.png" alt="additionalProduct">
+				<p>BLAZE LEGGINGS</p>
+				<p><span>$52.00</span></p>
+			</a>
+			<a href="#">
+				<img src="img/layer_45_2782.png" alt="additionalProduct">
+				<p>ALEXA SWEATER</p>
+				<p><span>$52.00</span></p>
+			</a>
+			<a href="#">
+				<img src="img/layer_46_2783.png" alt="additionalProduct">
+				<p>AGNES TOP</p>
+				<p><span>$52.00</span></p>
+			</a>
+			<a href="#">
+				<img src="img/rectangle_5_copy_2772.png" alt="additionalProduct">
+				<p>SYLVA SWEATER</p>
+				<p><span>$52.00</span></p>
+			</a>
+		</div>
+    </div>
+</div>  
 <div class="crl"></div>
 <div class="footer_block">
 	<div class="endBanner">
