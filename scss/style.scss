@@ -65,7 +65,8 @@ $accentColor: #f16d7f;
 }
 
 .range__link {
-	text-decoration: none;
+    text-decoration: none;
+    transition: $buttonTransition;;
 }
 
 .range__link:hover {
@@ -140,7 +141,8 @@ $accentColor: #f16d7f;
     margin: 100px 70px;
     padding-right: 20px;
     opacity: 0;
-	background: url(../img/forma_1_copy_1287.png) no-repeat 10px;
+    background: url(../img/forma_1_copy_1287.png) no-repeat 10px;
+    transition: $buttonTransition;
 }
 
 .hover_cart img{
@@ -164,6 +166,7 @@ $accentColor: #f16d7f;
 	width: 261px;
 	height: 280px;
 	background-color: #e9e9e9;
+    transition: $buttonTransition;
 }
 
 .fetured_items__link>p {
@@ -194,10 +197,11 @@ $accentColor: #f16d7f;
     font-weight: 700;
     letter-spacing: 0.025em;
     margin-top: 35px;
+    transition: $buttonTransition;
 }
 
 .browseAllProduct:hover {
-	background-color: darken($color: $accentColor, $amount: 5);
+	background-color: $accentColorDark;
 }
 
 .only_offer {
