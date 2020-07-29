@@ -63,6 +63,7 @@
 	background-color: #d6d6d6;
 	display: inline-block;
 	margin-right: 12px;
+    transition: $buttonTransition;
 }
 
 .quote__slider:hover {
@@ -135,6 +136,7 @@
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
+    transition: $buttonTransition;
 }
 .subscribe-form button:hover {
 	background-color: darken($color: $accentColor, $amount: 5);
@@ -184,6 +186,7 @@
     letter-spacing: 0.025em;
     color: #898989;
     text-decoration: none;
+    transition: $buttonTransition;
 }
 
 .footer__content a:hover {
@@ -222,6 +225,7 @@
     color: #b2b2b2;
 	text-decoration: none;
     margin-left: 0.3em;
+    transition: $buttonTransition;
 }
 
 .social-link a:hover {

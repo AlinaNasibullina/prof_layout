@@ -1,5 +1,7 @@
 $accentColor: #f16d7f;
+$accentColorDark: darken($color: $accentColor, $amount: 5);
 
+$buttonTransition: 0.3s;
 
 body {
     margin: 0;
@@ -12,4 +14,12 @@ body {
 .container {
     width: 1140px;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    transition: $buttonTransition;
 }

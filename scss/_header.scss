@@ -39,6 +39,7 @@
     border: none;
     color: #7c7c7c;
     outline: none;
+    transition: $buttonTransition;
 
 }
 
@@ -47,7 +48,8 @@
 }
 
 .search__browse:hover {
-    opacity: 0.8;
+    background-color: darken($color: #f9f9f9, $amount: 10);
+    color: darken($color: #7c7c7c, $amount: 10);
 }
 
 .header .search input {
@@ -71,10 +73,16 @@
     color: #a4a4a4;
 }
 
+.header .search button:last-child:hover {
+    color: darken($color: #a4a4a4, $amount: 10);
+    background-color: #f9f9f9;
+}
+
 .header__cart_link {
 	text-decoration: none;
     margin-left: auto;
     margin-right: 26px;
+    transition: $buttonTransition;
 }
 
 .header__cart_link:hover {
@@ -91,10 +99,11 @@
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
+    transition: $buttonTransition;
 }
 
 .header__account-bar:hover {
-	opacity: 0.8;
+	background-color: $accentColorDark;
 }
 
 
@@ -135,6 +144,7 @@
     height: 3px;
     background-color: #ef5b70;
     opacity: 0;
+    transition: $buttonTransition;
 }
 
 .topNav__list:hover .navLine {
