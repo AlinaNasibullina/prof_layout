@@ -497,4 +497,95 @@ button {
   background-color: #f16d7f;
   color: #f7f7f8;
 }
-/*# sourceMappingURL=browseStyle.css.map */
+
+/*вынести стили блока отдельно, используются трижды*/
+.fetured_items__content {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fetured_items__link {
+  text-decoration: none;
+  height: 360px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.hover_cart {
+  position: absolute;
+  width: 103px;
+  height: 39px;
+  border: 1.0px solid #ffffff;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 70px;
+  padding-right: 20px;
+  opacity: 0;
+  background: url(../img/forma_1_copy_1287.png) no-repeat 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover_cart img {
+  width: 23px;
+  height: 22px;
+}
+
+.fetured_items__link:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px #d9d9d9;
+          box-shadow: 0px 5px 8px 0px #d9d9d9;
+}
+
+.fetured_items__link:hover img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.fetured_items__link:hover .hover_cart {
+  opacity: 1;
+}
+
+.fetured_items__link img {
+  width: 261px;
+  height: 280px;
+  background-color: #e9e9e9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fetured_items__link > p {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-left: 15px;
+}
+
+.fetured_items__link .price {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+/*# sourceMappingURL=product.css.map */

@@ -1,39 +1,6 @@
 @import "browseStyle.scss";
 
 
-.cart-head {
-	height: 148px;
-	background-color: #f8f3f4;
-}
-
-.cart-head-content {
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cart-head-content h1 {
-	font-size: 24px;
-	line-height: 20px;
-	font-weight: 900;
-	text-transform: uppercase;
-	color: $accentColor;
-}
-
-.cart-head-content p {
-	font-size: 14px;
-	line-height: 20px;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: #636363;
-}
-
-.cart-head-content>p>span {
-	font-weight: 700;
-	color: $accentColor;
-}
-
 
 .checkoutBlock {
     margin-top: 70px;
@@ -94,6 +61,8 @@
 }
 
 .checkoutItems{
+    
+    transition: $buttonTransition;
     & > input {
         display: none;
     }
@@ -114,6 +83,7 @@
         height: 0px;
         position: relative;
         z-index: 10;
+        transition: $buttonTransition;
     }
     & input:checked ~ div {
         height: fit-content;
