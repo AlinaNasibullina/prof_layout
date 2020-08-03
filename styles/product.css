@@ -20,6 +20,7 @@ a {
 button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 /*заголовок New Arrivals хлебные крошки*/
@@ -498,6 +499,214 @@ button {
   color: #f7f7f8;
 }
 
+.productContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.verticalFilters {
+  width: 25%;
+}
+
+.verticalFilters > div > input {
+  display: none;
+}
+
+.verticalFilters > div > label {
+  width: 80%;
+  position: relative;
+  z-index: 20;
+  display: block;
+  font-size: 14px;
+  line-height: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ef5b70;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #eaeaea;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  background: url(../img/arrow_open.png) no-repeat 99% center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.verticalFilters > div > label:hover {
+  -webkit-box-shadow: 3px 3px 4px 0px #E2E2E2;
+          box-shadow: 3px 3px 4px 0px #E2E2E2;
+}
+
+.verticalFilters > div > div {
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.verticalFilters > div > div a {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+.verticalFilters > div > div a:hover {
+  color: #494848;
+}
+
+.verticalFilters > div > input:checked ~ div {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.verticalFilters > div > input:checked ~ label {
+  background: url(../img/arrow_close.png) no-repeat 99% center;
+}
+
+/*меню аккордеон вынести отдельно*/
+.filterResult {
+  width: 74%;
+}
+
+.filterResult .detailsFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filterResult .detailsFilter .trendFilter,
+.filterResult .detailsFilter .sizeFilter,
+.filterResult .detailsFilter .priceFilter {
+  width: 31%;
+}
+
+.filterResult .detailsFilter p,
+.filterResult .detailsFilter label,
+.filterResult .detailsFilter input[type="text"] {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+.filterResult .detailsFilter p span,
+.filterResult .detailsFilter label span,
+.filterResult .detailsFilter input[type="text"] span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filterResult .detailsFilter .trendFilter > div {
+  width: 62%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filterResult .detailsFilter .trendFilter > div p {
+  margin: 0;
+}
+
+.filterResult .detailsFilter .trendFilter > div p:not(:last-child) {
+  padding: 0 0.5em 0 0;
+  border-right: 1px solid #dfdfdf;
+}
+
+.filterResult .detailsFilter .sizeFilter > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filterResult .detailsFilter .sizeFilter > div div {
+  width: 25%;
+}
+
+.filterResult .detailsFilter .sizeFilter > div div input {
+  margin-right: 0.7em;
+}
+
+.filterResult .detailsFilter .priceFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filterResult .detailsFilter .priceFilter input {
+  width: 100%;
+}
+
+.filterResult .detailsFilter .filterSetting {
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filterResult .detailsFilter .filterSetting div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.filterResult .detailsFilter .filterSetting div label {
+  line-height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.filterResult .detailsFilter .filterSetting div input {
+  outline: none;
+  line-height: 29px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  margin-left: -3px;
+  width: 80px;
+  padding-left: 10px;
+}
+
 /*вынести стили блока отдельно, используются трижды*/
 .fetured_items__content {
   margin-top: 55px;
@@ -587,5 +796,148 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   color: #f16d7f;
+}
+
+.filterResult > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterResult > div:last-child .pageLink {
+  width: 32%;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterResult > div:last-child .pageLink .link-arrow {
+  color: #aaaaaa;
+  pointer-events: none;
+}
+
+.filterResult > div:last-child .pageLink .link-arrow--active {
+  color: #ef5b70;
+  pointer-events: initial;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.filterResult > div:last-child .pageLink .link-arrow--active:hover {
+  color: #aaaaaa;
+}
+
+.filterResult > div:last-child .pageLink .link-page,
+.filterResult > div:last-child .pageLink .link-page-more {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #c4c4c4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.filterResult > div:last-child .pageLink .link-page--active,
+.filterResult > div:last-child .pageLink .link-page-more--active {
+  color: #ef5b70;
+  pointer-events: none;
+}
+
+.filterResult > div:last-child .pageLink .link-page:hover,
+.filterResult > div:last-child .pageLink .link-page-more:hover {
+  color: #ef566b;
+}
+
+.filterResult > div:last-child .pageLink .link-page-more {
+  margin: 0 -1.2em;
+}
+
+.filterResult > div:last-child button {
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #ef5b70;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ef5b70;
+  padding: 0 45px;
+  outline: none;
+}
+
+.filterResult > div:last-child button:hover {
+  background-color: #fef9f9;
+  color: #ef566b;
+}
+
+.infoBanner {
+  height: 341px;
+  background-color: #222224;
+  margin-top: 110px;
+  margin-bottom: -100px;
+}
+
+.infoBanner > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infoBanner--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 145px;
+  margin: 0 1em;
+}
+
+.infoBanner--content p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+  margin: 0.5em;
+  text-align: center;
+}
+
+.infoBanner--content p span {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.infoBanner--content:nth-child(1) {
+  background: url(../img/forma_1_1322.png) no-repeat center 90px;
+}
+
+.infoBanner--content:nth-child(2) {
+  background: url(../img/forma_1_1340.png) no-repeat center 90px;
+}
+
+.infoBanner--content:nth-child(3) {
+  background: url(../img/forma_1_1341.png) no-repeat center 90px;
 }
 /*# sourceMappingURL=product.css.map */

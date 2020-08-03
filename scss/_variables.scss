@@ -21,7 +21,8 @@ a {
 }
 
 button {
-    transition: $buttonTransition;
+	transition: $buttonTransition;
+	cursor: pointer;
 }
 
 

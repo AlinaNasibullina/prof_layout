@@ -20,6 +20,7 @@ a {
 button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 /*заголовок New Arrivals хлебные крошки*/
@@ -565,12 +566,35 @@ button {
   background-color: #bfbfbf;
 }
 
+.headSlider--link {
+  width: 63px;
+  height: 1px;
+  background-color: #d6d6d6;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headSlider--link--active {
+  height: 3px;
+  background-color: #ef5b70;
+}
+
+.headSlider--link:hover {
+  height: 3px;
+  background-color: #ef5b70;
+}
+
 .headSlider--content {
   margin-top: -85px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   padding-top: 75px;
   padding-bottom: 120px;
+}
+
+.headSlider--content > div:first-child {
+  text-align: center;
 }
 
 .headSlider--page {
