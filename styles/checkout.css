@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   margin: 0;
@@ -19,6 +20,47 @@ a {
 button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+/*заголовок New Arrivals хлебные крошки*/
+.cart-head {
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+.cart-head-content {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-head-content h1 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+.cart-head-content p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+}
+
+.cart-head-content > p > span {
+  font-weight: 700;
+  color: #f16d7f;
 }
 
 .header {
@@ -457,45 +499,6 @@ button {
   color: #f7f7f8;
 }
 
-.cart-head {
-  height: 148px;
-  background-color: #f8f3f4;
-}
-
-.cart-head-content {
-  height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.cart-head-content h1 {
-  font-size: 24px;
-  line-height: 20px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #f16d7f;
-}
-
-.cart-head-content p {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #636363;
-}
-
-.cart-head-content > p > span {
-  font-weight: 700;
-  color: #f16d7f;
-}
-
 .checkoutBlock {
   margin-top: 70px;
 }
@@ -562,6 +565,11 @@ button {
   color: #000000;
 }
 
+.checkoutItems {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .checkoutItems > input {
   display: none;
 }
@@ -584,6 +592,8 @@ button {
   height: 0px;
   position: relative;
   z-index: 10;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .checkoutItems input:checked ~ div {

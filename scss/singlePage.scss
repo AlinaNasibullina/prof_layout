@@ -51,13 +51,30 @@
     button:hover {
         background-color: darken($color: #d8d8d8, $amount: 10);
     }
-
+    &--link {
+        width: 63px;
+        height: 1px;
+        background-color: #d6d6d6;
+        display: inline-block;
+        transition: $buttonTransition;
+        &--active{
+            height: 3px;
+            background-color: #ef5b70;
+        }
+        &:hover {
+            height: 3px;
+            background-color: #ef5b70;
+        }
+    }
     &--content{
         margin-top: -85px;
         background-color: #ffffff;
         border: 1px solid #eaeaea;
         padding-top: 75px;
         padding-bottom: 120px;
+    }
+    &--content > div:first-child {
+        text-align: center;
     }
     &--page {
         display: flex;
