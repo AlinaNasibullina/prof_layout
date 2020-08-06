@@ -22,7 +22,7 @@
         line-height: 37px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #ef5b70;
+        color: #6f6e6e;
         border-left: 5px solid #ef5b70;
         border-bottom: 1px solid #eaeaea;
         padding-left: 10px;
@@ -58,6 +58,7 @@
     }
     
     & > div > input:checked ~ label {
+        color: #ef5b70;
         background: url(../img/arrow_close.png) no-repeat 99% center;
     }
 }
@@ -155,82 +156,6 @@
 }
 
 
-/*вынести стили блока отдельно, используются трижды*/
-.fetured_items__content {
-    margin-top: 55px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.fetured_items__link {
-	text-decoration: none;
-    height: 360px;
-    margin-bottom: 35px;
-    position: relative;
-}
-
-.hover_cart {
-    position: absolute;
-    width: 103px;
-    height: 39px;
-    border: 1.0px solid #ffffff;
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 700;
-    color: #ffffff;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 100px 70px;
-    padding-right: 20px;
-    opacity: 0;
-    background: url(../img/forma_1_copy_1287.png) no-repeat 10px;
-    transition: $buttonTransition;
-}
-
-.hover_cart img{
-	width: 23px;
-	height: 22px;
-}
-
-.fetured_items__link:hover {
-    box-shadow: 0px 5px 8px 0px #d9d9d9;
-}
-
-.fetured_items__link:hover img {
-    filter: brightness(0.3);
-}
-
-.fetured_items__link:hover .hover_cart {
-	opacity: 1;
-}
-
-.fetured_items__link img {
-	width: 261px;
-	height: 280px;
-	background-color: #e9e9e9;
-    transition: $buttonTransition;
-}
-
-.fetured_items__link>p {
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #222222;
-	margin-left: 15px;
-}
-
-.fetured_items__link .price {
-	font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $accentColor;
-}
-
 
 .filterResult > div:last-child {
     display: flex;
@@ -253,9 +178,9 @@
                 transition: $buttonTransition;
                 &:hover {
                     color: #aaaaaa;
+                }
             }
         }
-    }
         .link-page,
         .link-page-more {
             font-size: 16px;
