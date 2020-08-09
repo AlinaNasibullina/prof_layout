@@ -91,7 +91,10 @@
 
 .fetured__box {
     margin-top: 100px;
-    text-align: center;
+    &>h3,
+    &>p {
+        text-align: center;
+    }
 }
 
 .fetured_items__h3 {
